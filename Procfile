@@ -1,10 +1,1 @@
-mkdir -p ~/.streamlit/ 
-echo "\
-[general]\n\
-email = \"{umair.m.k009@gmail.com}\"\n\
-" > ~/.streamlit/credentials.toml 
-echo "\
-[server]\n\
-headless = true\n\
-enableCORS=false\n\port = $PORT\n\
-" > ~/.streamlit/config.toml
+web: sh setup.sh && streamlit run scrap.py
